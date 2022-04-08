@@ -18,7 +18,7 @@ return new class extends Migration
             $table->id();
             $table->boolean('preencheuFormulario')->default(true);
             $table->dateTime('dataPreencimento');
-            $table->string('enfermidades');
+            $table->json('enfermidades');
             $table->boolean('usaMedicacao');
             $table->string('quaisMedicacoes')->nullable();
             $table->boolean('fezExamesUltimosSeisMeses');

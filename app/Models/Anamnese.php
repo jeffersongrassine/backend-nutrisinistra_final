@@ -12,7 +12,7 @@ class Anamnese extends Model
     protected $fillable = [
         'preencheuFormulario',
         'dataPreencimento',
-        'enfermidades',
+        'enfermidades' => 'json_encode',
         'usaMedicacao',
         'quaisMedicacoes',
         'fezExamesUltimosSeisMeses',

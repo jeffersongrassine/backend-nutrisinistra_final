@@ -18,14 +18,14 @@ Route::post('login', [AuthController::class, 'login']);
 Route::post('logout', [AuthController::class, 'logout'])->middleware('auth:sanctum');
 
 /**Anamnese */
-Route::get('anamnese', [AnamneseController::class, 'index'])->middleware('auth:sanctum');
+Route::get('anamnese', [AnamneseController::class, 'index']);
 Route::post('anamnese', [AnamneseController::class, 'store'])->middleware('auth:sanctum');
 Route::get('anamnese/{id}', [AnamneseController::class, 'show'])->middleware('auth:sanctum');
 Route::put('anamnese/{id}', [AnamneseController::class, 'update'])->middleware('auth:sanctum');
 Route::delete('anamnese/{id}', [AnamneseController::class, 'destroy'])->middleware('auth:sanctum');
 
 /**Diário Alimentar */ 
-Route::get('diario-alimentar', [DiarioAlimentarContoller::class, 'index'])->middleware('auth:sanctum');
+Route::get('diario-alimentar', [DiarioAlimentarContoller::class, 'index']);
 Route::post('diario-alimentar', [DiarioAlimentarContoller::class, 'store'])->middleware('auth:sanctum');
 Route::get('diario-alimentar/{id}', [DiarioAlimentarContoller::class, 'show'])->middleware('auth:sanctum');
 Route::put('diario-alimentar/{id}', [DiarioAlimentarContoller::class, 'update'])->middleware('auth:sanctum');

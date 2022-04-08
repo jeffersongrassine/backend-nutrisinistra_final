@@ -23,6 +23,9 @@ class AnamneseFactory extends Factory
             'Diabete',
             'Gastrite',
             'Obesidade'
+
+   
+        
         ]),
         'usaMedicacao' => $this->faker->boolean(),
         'quaisMedicacoes' => $this->faker->sentence(20),
